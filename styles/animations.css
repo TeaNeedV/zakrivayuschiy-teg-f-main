@@ -85,15 +85,17 @@
 }
 
 @keyframes scaleHeart {
-  0% { 
-    transform: scale(1); 
-  } /* Начальный масштаб */
-  50% { 
-    transform: scale(1.25); 
+  0% {
+    transform: scale(1);
   }
-  100% { 
-    transform: scale(1);}
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
+
 
 .heart-contour {
   transition: stroke 0.1s linear; /* Линейное изменение цвета за 0.1 секунды */
