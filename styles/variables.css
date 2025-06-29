@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: 'Inter-Variable.woff2', sans-serif;
-  --accent-font: 'PressStart2P-Regular.woff';
+  --main-font: 'Inter-Variable', sans-serif;
+  --accent-font: 'PressStart2P-Regular';
   --main-font-size: clamp(1rem, -0.0652rem + 5.3261vw, 4.0625rem);
   --main-font-weight: 400;
    --background-gradient: repeating-linear-gradient(

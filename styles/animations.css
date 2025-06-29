@@ -96,7 +96,6 @@
   }
 }
 
-
 .heart-contour {
   transition: stroke 0.1s linear; /* Линейное изменение цвета за 0.1 секунды */
 }
