@@ -1,0 +1,96 @@
+/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+*/
+
+/*наведение*/
+.like-icon:hover .core {
+  fill: var(--contour-color); /* Цвет для сердцевины при наведении */
+}
+
+.like-icon:hover .main-body {
+  transition: fill 0.05s ease, fill 0.3s 0.03s; /* Задержка в 0.05 сек. и затем плавное изменение цвета */
+  fill: var(--contour-color);
+}
+
+/*актив*/
+.like-icon:active .core {
+  fill: var(--animation-fill-color); 
+}
+
+.like-icon:active .main-body {
+  
+  fill: var(--animation-fill-color);
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+}
+
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+}
+
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.06s;
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s ease-in forwards;
+  animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  fill: var(--animation-fill-color);
+  opacity: 1; /* Начальная прозрачность */
+}
+@keyframes sparks {
+  0% {
+    fill: none;
+    opacity: 0; /* Полная прозрачность в начале */
+  }
+  50% {
+    
+  
+    fill: var(--animation-fill-color);
+    opacity: 1; /* Полная видимость в середине */
+  }
+  100% {
+    fill: none;
+    opacity: 0; /* Полная прозрачность в конце */
+  }
+}
+ 
+.core {
+    fill: transparent;
+    transition: fill 0.3s linear 0.03s;
+}
+.heart {
+  transform: scale(1); /* Исходный масштаб */
+  transition: transform 0.3s ease-in; /* Плавное изменение масштаба */
+  transition-delay: 0.1s;
+}
+
+.is-liked .heart {
+  animation: scaleHeart 0.3s ease-in forwards; /* Запуск анимации масштабирования */
+  transition-delay: 0.1s;
+}
+
+@keyframes scaleHeart {
+  0% { transform: scale(1); } /* Начальный масштаб */
+  50% { transform: scale(1.25); } 
+  100% { transform: scale(1);}
+}
+
+.heart-contour {
+  transition: stroke 0.1s linear; /* Линейное изменение цвета за 0.1 секунды */
+}
