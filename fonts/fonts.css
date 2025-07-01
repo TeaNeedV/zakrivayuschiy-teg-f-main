@@ -3,12 +3,12 @@
     font-family: 'Inter-Variable';
     src: url(./Inter-Variable.woff2) format('woff2 supports variations'),
          url(./Inter-Variable.woff2) format('woff2-variations');
-    font-weight: 400 700;
+    font-weight: 400 700 785;
 }
 
 @font-face {
-    font-family: 'PressStart2P-Regular';
+    font-family: 'PressStart2P';
     src: url(./PressStart2P-Regular.woff) format('woff');
-    font-variation-settings:  'wght' 400, 785;
+    font-weight: 400;
 }
 
